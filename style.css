@@ -12,9 +12,10 @@ body {
 }
 nav {
   position: fixed;
-  /* background-color: red; */
+  /* background-color: #0ba34e; */
   display: flex;
   align-items: flex-start;
+  height: 12vh;
   width: 100%;
   padding: 2vw 12vw;
   justify-content: space-between;
@@ -24,6 +25,8 @@ nav {
   gap: 2vw;
   align-items: flex-start;
   padding: 1vh 0;
+  position: relative;
+  z-index: 10;
 }
 .nav-part-2 h4 {
   font-size: 0.73vw;
@@ -33,10 +36,11 @@ nav {
 .nav-part-2 h4 span {
   font-size: 0.77vw;
   font-weight: 600;
-  margin-bottom: 2vw;
+  margin-bottom: 2.6vw;
 }
 .nav-part-2 h5 {
   margin-bottom: 1vw;
+  opacity: 0;
   /* margin-top: 1vh; */
 }
 .nav-part-2 h5 span {
@@ -50,21 +54,7 @@ nav:hover #nav-bottom {
   bottom: -150%;
   background-color: #111;
 }
-#nav-bottom {
-  /* background-color: red; */
-  height: 0%;
-  position: absolute;
-  width: 79%;
-  transition: all ease 0.65s;
-  bottom: 0%;
-  border-bottom: 1px solid #dadada;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 2vw 15vw;
-  padding-left: 15.5vw;
-  /* padding-top: 6vw; */
-}
+
 .bottom-div {
   margin-top: 6vw;
   /* position: absolute; */
@@ -95,6 +85,16 @@ nav button {
 nav button svg {
   height: 0.85vw;
   margin-left: 2vw;
+}
+#nav-bottom {
+  width: 79%;
+  height: 0vh;
+  position: absolute;
+  background-color: #111;
+  top: 100%;
+  bottom: 0;
+  z-index: 9;
+  border-bottom: 1px solid white;
 }
 #page1 {
   height: 100vh;
@@ -150,3 +150,17 @@ nav button svg {
 /* .nav-elem {
   color: aqua;
 } */
+/* #nav-bottom {
+  /* background-color: red; */
+/* height: 0%; */
+/* position: absolute; */
+/* width: 79%; */
+/* transition: all ease 0.65s; */
+/* bottom: 0%; */
+/* border-bottom: 1px solid #dadada; */
+/* display: flex; */
+/* align-items: flex-start; */
+/* justify-content: space-between; */
+/* padding: 2vw 15vw; */
+/* padding-left: 15.5vw; */
+/* padding-top: 6vw; */
