@@ -14,7 +14,7 @@ nav {
   position: fixed;
   /* background-color: red; */
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   padding: 2vw 12vw;
   justify-content: space-between;
@@ -22,11 +22,28 @@ nav {
 .nav-part-2 {
   display: flex;
   gap: 2vw;
+  align-items: flex-start;
+  padding: 1vh 0;
 }
 .nav-part-2 h4 {
-  font-size: 0.76vw;
+  font-size: 0.73vw;
   font-weight: 600;
   text-transform: uppercase;
+}
+.nav-part-2 h4 span {
+  font-size: 0.77vw;
+  font-weight: 600;
+  margin-bottom: 2vw;
+}
+.nav-part-2 h5 {
+  margin-bottom: 1vw;
+  /* margin-top: 1vh; */
+}
+.nav-part-2 h5 span {
+  font-size: 0.77vw;
+  font-weight: 400;
+  display: inline-block;
+  background-color: red;
 }
 nav:hover #nav-bottom {
   height: 150%;
@@ -130,3 +147,6 @@ nav button svg {
   width: 100%;
   background-color: #111;
 }
+/* .nav-elem {
+  color: aqua;
+} */
